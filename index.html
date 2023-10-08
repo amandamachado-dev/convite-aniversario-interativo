@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    
+    
+    <title>Convite | Arthur Machado</title>
+</head>
+<body>
+    <main>
+        <div class="title">
+            <h1>Convite para a Festa mais <span>Incrível </span>do Ano!</h1>
+            <h3>É hora de celebrar! </h3>
+            
+            <p> <span> ARTHUR</span> está fazendo aniversário e queremos você conosco para a diversão.</p>
+        </div>
+    
+        
+        <!--<div class="detalhes">
+            <h3>  7 anos</h3>
+            <p class="detalhes"> <span>Data:</span> 23/12/2023</p>
+            <p class="detalhes"> <span>Horário:</span> das 16h às 18h</p>
+            <p class="detalhes"> <span>Local:</span> Av. Paulista, 2736</p>
+        </div>-->
+        <div class="buttons">
+            <button class="itens"> <a href="./detalhes.html">Detalhes</a></button>
+            <button onclick="mostrarMapa()" class="itens local-button">Local</button>
+            
+            <div id="mapa-popup" style="display: none; position: absolute; top: 50px; left: 50px; width: 80%; height: 80%; background-color: white; z-index: 999;">
+                <!-- Coloque o código de incorporação do Google Maps aqui -->
+                <iframe width="300" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Estrada%20de%20Itapecerica,%202736%20S%C3%A3o%20Paulo+(LOCAL%20DA%20FESTA)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href='https://maps-generator.com/'>Maps Generator</a>
+
+                <button onclick="fecharMapa()">Fechar Mapa</button>
+            </div>            
+            <button class="itens"> <a href="https://api.whatsapp.com/send?phone=5511954559474&text=Olá,%20estou%20confirmado%20para%20a%20festa%20de%20aniversário%20do%20Arthur!" target="_blank"
+                >Confirmar presença</a></button>
+        </div>
+    
+    </main>
+
+    <script>
+        function mostrarMapa() {
+            var mapaPopup = document.getElementById("mapa-popup");
+            mapaPopup.style.display = "block";
+        }
+
+        function fecharMapa() {
+            var mapaPopup = document.getElementById("mapa-popup");
+            mapaPopup.style.display = "none";
+        }
+    </script>
+</body>
+</html>

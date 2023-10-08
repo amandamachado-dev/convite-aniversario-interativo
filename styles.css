@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Gloria+Hallelujah&family=Paytone+One&family=Roboto&family=Secular+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+body {
+    background-image: url(./assets/background-2-tinta.png);    
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    line-height: 40px;
+    font-weight: bold;
+    
+}
+
+.title {
+    color: #111d88;
+    border-radius: 10px;
+    padding: 10px;    
+    font-size: 20px;
+    text-align: center;
+    font-size: 23px;
+}
+
+h1 { margin-bottom: 40px;}
+
+p { margin-top: 20px;}
+
+.title span {
+    color: #ff9100;
+    
+}
+p span {
+    color: #ff9100;
+    
+}
+
+/*.detalhes {
+    
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+}*/
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+a:hover {
+    color: #111d88;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem 5rem;   
+    gap: 18px; 
+}
+
+button {
+    padding: 10px;
+    border-radius: 10px;
+    border: transparent;
+    background-color: #111d88;
+    color: azure;
+    font-size: 1rem;
+    transition: all 0.5s ease-in-out;
+    
+    
+    
+}
+button:hover {
+    background: transparent;
+    color: #111d88;
+    border: 3px solid #111d88;
+    transform: scale(1.2);
+    animation: balançar 0.3s infinite;
+    
+}
+button:active {
+    background: transparent;
+    color: #111d88;
+    border: 3px solid #111d88;
+    transform: scale(1.2);
+    
+}
+
+@keyframes balançar {
+    0% {rotate: 1deg;}
+    50% {rotate: -0.5deg;}
+    100% {rotate: 1deg;}
+}
